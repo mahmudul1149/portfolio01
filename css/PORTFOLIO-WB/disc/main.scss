@@ -1,0 +1,69 @@
+@import 'confiq';
+@import 'utilies';
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	$font-family: 'Lato', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+list-style: none;
+}
+#main-nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	.logo{
+		font-size: 2rem;
+		.fas{
+			color: $primary-color;
+			margin-right: .5rem;
+		}
+	
+	}
+	.icons{
+		margin-left: auto;
+		padding: 1rem;
+		.fas{
+			margin: .5rem;
+		}
+	}
+}
+
+// Home
+#home{
+	&-a{
+		.healthy{
+		display: flex;
+		align-items: center;
+		// justify-content: center;
+		gap: 1rem;
+			.content{
+				max-width: 400px;
+				h1{
+					font-size: 3rem;
+				}
+				p{
+					padding: 1rem 0;
+				}
+			}
+			img{
+				height: 25rem;
+			}
+			}
+		}
+		&-b{
+			.specials{
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1rem;
+				margin: 1rem;
+			}
+		}
+	}
